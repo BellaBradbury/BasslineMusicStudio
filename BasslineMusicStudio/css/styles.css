@@ -1,0 +1,382 @@
+/* #bbb1b141          : background */
+/* #222               : general text */
+
+/* rgb(183, 34, 133)  : first accent */                     /* SLIGHT ADJUSTMENT MADE TO LIGHTEN THIS COLOR IN .list SELECTOR */
+/* rgb(102, 51, 255)  : second accent */                    /* SLIGHT ADJUSTMENT MADE TO LIGHTEN THIS COLOR IN .list SELECTOR */
+/* rgb(255, 131, 29)  : focus */               
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----- 0px */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #bbb1b141;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+ /* --- LINK & BUTTON STATES --- */
+a, button {
+  background: none;
+  text-decoration: none;
+  color: rgb(183, 34, 133);
+  border: rgba(0, 0, 0, 0) 1px solid;
+  border-radius: 5px;
+  padding: 2px;
+  transition: all .25s;
+}
+a:visited {
+  color: rgb(102, 51, 255);
+}
+a:focus, button:focus {
+  outline: none;
+  background-color: rgba(255, 131, 29, 0.25);
+  border-color: rgb(255, 131, 29);
+  color: #222; 
+}
+a:hover {
+  color: rgb(102, 51, 255);
+  background-color: rgba(183, 34, 133, 0.15);
+}
+
+/* --- NAVIGATION --- */
+nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav li {
+  text-transform: uppercase;
+  margin: 1% 2%;
+  text-align: center;
+  width: 80%;
+  white-space: normal;
+}
+.nav .name {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  width: fit-content;
+}
+.nav button {
+  font-size: large;
+  color: white;
+}
+#nav-menu {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.nav a, .nav button {
+  transition: all .5s;
+  padding: 2%;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+.nav a:visited {
+  color: white;
+}
+.nav-active {
+  background-color: rgba(255, 255, 255, 0.35);
+  transition: all 0.25s;
+  border-color: white;
+}
+.nav a:hover, .nav button:hover {
+  background-color: rgba(255, 131, 29, 0.25);
+}
+
+.nav-btn {
+  display: none;
+}
+.nav-btn a {
+  display: block;
+  width: 100%;
+}
+
+/* --- HEADER --- */
+header {
+  text-align: center;
+  background: url('../images/NYC.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  border: 3px solid #222;
+  transition: all .75s;
+}
+header .profile-image:hover {
+  transform: scale(.75) rotate(360deg);
+}
+.tag {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #222;
+  padding: 10px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  max-width: fit-content;
+  margin: 10px auto;
+}
+
+/* --- SECTIONS --- */
+section {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+section:hover {
+  border-color: rgb(183, 34, 133);
+}
+section h2 {
+  text-align: center;
+  border-bottom: rgba(183, 34, 133, 0.3) dashed 2px;
+}
+
+/* --- LISTS --- */
+ul.list {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list li {
+  border-radius: 6px;
+  background: rgba(164, 137, 247, 0.25);
+  color: #222;
+  padding: 5px 10px;
+  margin: 2px;
+  max-width: fit-content;
+  min-width: 40%;
+  list-style: none;
+  transition: all 0.5s;
+}
+.list li:nth-child(3n + 3) {
+  background: rgba(220, 89, 176, 0.25);
+}
+.list li:nth-child(3n + 2) {
+  background: rgba(255, 131, 29, 0.25);
+}
+.list li:hover {
+  background: rgba(164, 137, 247, 0.6);
+}
+.list li:nth-child(3n + 3):hover {
+  background: rgba(220, 89, 176, 0.6);
+}
+.list li:nth-child(3n + 2):hover {
+  background: rgba(255, 131, 29, 0.6);
+}
+
+/* --- FOOTER --- */
+footer {
+  width: 100%;
+  min-height: 30px;
+  margin: 0 auto;
+}
+footer p {
+  font-size: .75em;
+}
+
+/* --- PORTFOLIO PAGE --- */
+#portfolio section {
+  position: relative;
+}
+#portfolio section p {
+  margin-bottom: 5%;
+}
+.app-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  left: 15px;
+}
+.app-links a{
+  border: solid 1px #222;
+  box-shadow: 5px 5px rgba(183, 34, 133, 0.75), -5px -5px rgba(164, 137, 247, 0.75);
+  
+  padding: 2%;
+}
+
+/* --- HOBBIES PAGE --- */
+#reading .list li{
+  min-width: 100%;
+}
+#reading small {
+  font-style: italic;
+  font-size: small;
+}
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --- 550px */
+@media screen and (min-width: 550px) {
+  /* --- LISTS --- */
+  .list li{
+    min-width: 20%;
+  }
+
+  /* --- NAVIGATION --- */
+  .nav {
+    justify-content: space-between;
+  }
+  .nav li {
+    width: max-content;
+  }
+  .nav .name {
+    width: 30%;
+  }
+  .nav-btn a {
+    padding: 3%;
+    width: max-content;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+  #nav-menu {
+    display: none;
+  }
+
+  /* --- HEADER --- */
+  header .profile-image {
+    margin-top: 20px;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+  footer a{
+    width: 90%;
+  }
+  footer p {
+    width: 20%;
+  }
+}
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --- 768px */
+@media screen and (min-width: 768px) {
+  main p {
+    line-height: 1.6em;
+  }
+  .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* --- HEADER --- */
+  header {
+    min-height: 380px;
+  }
+  header .profile-image {
+    margin-top: 30px;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    margin-top: 5%;
+  }
+  footer a {
+    width: max-content;
+    margin-bottom: 3%;
+  }
+  footer :nth-child(1) {
+    order: 2;
+  }
+  footer :nth-child(2) {
+    order: 1;
+  }
+  footer :nth-child(3) {
+    order: 3;
+  }
+
+  /* --- PORTFOLIO PAGE --- */
+  #portfolio section {
+    width: 40%;
+  }
+
+  /* --- HOBBIES PAGE --- */
+  #reading .list li{
+    min-width: 49%;
+    max-width: 49%;
+  }
+}
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -- 1024px */
+@media screen and (min-width:1024px) {
+  /* --- NAVIGATION --- */
+  .nav .name {
+    width: 50%;
+    text-align: left;
+  }
+
+  /* --- SECTION --- */
+  section {
+    width: 43%;
+  }
+
+  /* --- PORTFOLIO PAGE --- */
+  #portfolio section {
+    width: 25%;
+  }
+
+  /* --- HOBBIES PAGE --- */
+  #reading .list li{
+    min-width: 100%;
+  }
+}

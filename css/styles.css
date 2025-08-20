@@ -380,3 +380,12 @@ footer p {
     min-width: 100%;
   }
 }
+
+
+
+#email {
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  outline: 2px solid black;
+}

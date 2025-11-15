@@ -90,11 +90,12 @@ header .profile-image {
   overflow: hidden;
   border: 3px solid #222;
   transition: all .75s;
-  box-shadow: 0px 0px 20px 20px rgba(226, 170, 243, 0.582);
+  box-shadow: 0px 0px 10px 10px rgba(226, 170, 243, 0.582);
 }
 header .profile-image:hover {
   transform: scale(.75) rotate(360deg);
 }
+
 /* .tag {
   background-color: rgba(255, 255, 255, 0.75);
   color: #222;

@@ -190,8 +190,33 @@ a:hover {
 }
 
 /* --- FOOTER --- */
-
-
+footer {
+  background-color: #222;
+  bottom: 0;
+  width: 100vw;
+  padding: 20px;
+}
+footer p {
+  color: white;
+  margin-bottom: 0;
+}
+footer img {
+  max-width: 50px;
+}
+#socials-foot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#socials-foot a {
+  width: 100px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

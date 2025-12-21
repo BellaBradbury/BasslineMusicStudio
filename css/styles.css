@@ -54,7 +54,7 @@ a {
   background: none;
   text-decoration: none;
   color:  rgb(157, 76, 255);
-  border: rgba(0, 0, 0, 0) 1px solid;
+  border: rgba(0, 0, 0, 0) 2px solid;
   border-radius: 5px;
   padding: 2px;
   transition: all .25s;
@@ -64,7 +64,7 @@ a {
   text-align: center;
 }
 .fancy-btn {
-  border: solid 1px #222;
+  border: solid 2px #222;
   box-shadow: 5px 5px rgba(183, 34, 133, 0.75), -5px -5px rgba(164, 137, 247, 0.75);
   padding: 5%;
   margin: 15px auto;
@@ -80,13 +80,19 @@ a:visited {
 }
 a:focus {
   outline: none;
-  background-color: rgba(255, 131, 29, 0.25);
-  border-color: rgb(255, 131, 29);
+  background-color: rgba(255, 29, 29, 0.367);
+  border-color: rgb(255, 29, 29);
   color: #222; 
 }
 a:hover {
-  color: rgb(102, 51, 255);
-  background-color: rgba(183, 34, 133, 0.15);
+  color: white;
+  background-color: rgba(34, 34, 34, 0.761);
+}
+#online-links a:hover, #socials-foot a:hover {
+  background-color: rgba(255, 255, 255, 0.623);
+}
+.fancy-btn:focus {
+  box-shadow: 5px 5px rgba(34, 34, 34, 0.845), -5px -5px rgba(34, 34, 34, 0.43);
 }
 
  /* --- HEADER --- */

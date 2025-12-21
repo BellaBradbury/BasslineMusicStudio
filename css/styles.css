@@ -36,6 +36,8 @@ section {
   margin-top: 30px;
 }
 
+
+ /* --- TEXT STYLES --- */
 small {
   font-style: italic;
   font-size: 0.75rem;
@@ -112,14 +114,14 @@ a:hover {
   display: none;
  }
 
- /* --- FEATURE WINDOW --- */
+ /* --- HOME - FEATURE WINDOW SECTION --- */
  #feature-window {
   height: calc(100dvh - 315px);
   background-color: aqua;
   width: 100%;
  }
 
- /* --- BIO SECTION --- */
+ /* --- HOME - BIO SECTION --- */
  #bio {
   margin-top: 0;
  }
@@ -129,7 +131,7 @@ a:hover {
 }
 
 
- /* --- CONTACT SECTION --- */
+ /* --- HOME - CONTACT SECTION --- */
 #contact {
   background-color: #bd9aff54;
   border: 3px solid rgba(164, 137, 247, 0.75);
@@ -137,7 +139,7 @@ a:hover {
   padding-bottom: 15px;
 }
 
-/* --- EVENT WINDOW SECTION --- */
+/* --- HOME - EVENT WINDOW SECTION --- */
 #event-window div {
   background-color: #222;
 }
@@ -179,13 +181,24 @@ a:hover {
 }
 
 
-/* --- PRICE SECTION --- */
+/* --- HOME - PRICE SECTION --- */
 #price {
   border: 1px solid #222;
   border-radius: 25px;
   padding: 10px;
   margin-top: 70px;
 }
+
+/* --- FOOTER --- */
+
+
+
+
+
+
+
+
+
 
 
 

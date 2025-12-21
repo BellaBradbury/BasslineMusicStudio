@@ -13,68 +13,59 @@
   </head>
     
   <body>
-    <!-- <nav>
-      <ul class="nav">
-        <li class="name">Bassline Music Studio</li>
-        <li id="nav-menu"><button data-flag="up">&#9660;</button></li>
-        <li class="nav-btn"><a href="index.html">Home</a></li>
-        <li class="nav-btn"><a href="portfolio.html">Experience</a></li>
-      </ul>
-    </nav> -->
-
     <header>
-      <div class="overlay">
-        <img src="images/logo.png" alt="Bassline Studio logo: black bass surrounded by music notes in a circle on a purple background." class="profile-image">
-        <!-- <h1 class="tag name">BASSLINE STUDIO</h1> -->
-      </div>
+      <img src="images/logo.png" alt="Bass Line Studio logo: black bass surrounded by music notes in a circle on a purple background." class="logo">
+      <h1 class="header-title">Bass Line Music Studio</h1>
+      
+      <nav>
+        <button data-flag="up" id="nav-menu">&#9660;</button>
+        <ul id="navigation">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="media.html">MEDIA</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>     
-      <section id="contact">
-        <h2>CONTACT US</h2>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8E1YBbFKf10pBF6b-cBybVUq1QZT17LR85RDJgmA6XpirGw/viewform?usp=header" target="_blank">SIGN UP NOW!</a>
+    <main>    
+      <section id="feature-window">
+        <p>FEATURE WINDOW</p>
+        <!-- HERE IS WHERE STUDIO TOUR WILL GO -->
+      </section>
+
+      <section id="bio">
+        <p id="open-p">Bass Line Music Studio was formed by Bella and Zack Bradbury as a way to give our music students the opportunity to not just learn independently but also through group performance. We know firsthand that music is one of the best tools for self-expression and growth and we love getting to offer a safe space where community and collaboration are prioritized!</p>
+        <p>We offer one-on-one lessons to students of any age or skill level in Voice, Piano, Drums, Guitar, and Bass. In addition to Private Lessons, we also run student bands that meet weekly to work towards End-of-Season Concerts where they are able to showcase their passion for playing to their family and friends.</p>
+      </section>
+
+      <section id="contact" class="centered">
+        <h2>INTERESTED?</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8E1YBbFKf10pBF6b-cBybVUq1QZT17LR85RDJgmA6XpirGw/viewform?usp=header" target="_blank" class="fancy-btn">BOOK YOUR<br> TRIAL LESSON!</a>
         <p>-or-</p>
-        <a href="mailto:basslinemusicstudio@gmail.com" target="_blank">SEND AN EMAIL</a>
-        <p>with any questions!</p>
-        <p><small>(basslinemusicstudio@gmail.com)</small></p>
+        <a href="mailto:basslinemusicstudio@gmail.com" target="_blank">SEND US AN EMAIL</a>
       </section>
 
-      <section id="instruments">
-        <h2>INSTRUMENTS<br>WE TEACH</h2>
-        <ul class="list">
-          <li>VOCALS</li>
-          <li>PIANO</li>
-          <li>DRUMS</li>
-          <li>GUITAR</li>
-          <li>BASS</li>
-        </ul>
-      </section>
-
-      <section id="staff">
-        <h2>OUR TEAM</h2>
-        <ul class="list">
-          <li>Bella Bradbury</li>
-          <li>Zack Bradbury</li>
-          <li>Evelyn Koop</li>
-        </ul>
+      <section id="event-window" class="centered">
+        <div>
+          <h2>LIVE MUSIC</h2>
+        </div>
+        <h3>Join Us At Our Next Event</h3>
+        <img id="nxt-event-poster" src="images/1.1.26.poster.png" alt="Show Poster Details: Bass Line Music Studio Debut Concert January 11 2026 at 4:30pm at the Maumee Indoor Theater. Show your student id for a free ticket or $10/ticket.">
+        <a href="https://www.eventbrite.com/e/bass-line-debut-concert-tickets-1978684304018?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" target="_blank" class="fancy-btn">RESERVE TICKETS</a>
+        <a href="events.html">Can't make this one?<br> See our other upcoming events!</a>
       </section>
 
       <section id="price">
         <h2>OUR PRICING</h2>
-        <p>Plans consist of weekly appointments that are billed monthly!</p>
-        <ul class="list">
-          <li>30 Minute Private Lessons + Group Rehearsals:<br>$250/month</li>
-          <li>60 Minute Private Lessons + Group Rehearsals:<br>$350/month</li>
-          <li>30 Minute Private Lessons Only:<br>$175/month</li>
-          <li>60 Minute Private Lessons Only:<br>$300/month</li>
-        </ul>
+        <p><strong>TRIAL LESSON</strong> <small>(30 minutes)</small><strong>: $15</strong></p>
+        <p>Enjoy a discount on your first lesson with us to get started on your musical journey!</p>
+        <p><small>Lesson plans consist of weekly appointments that are billed monthly. Tuition pricing starts at $175/month for a weekly 30 minute Private Lesson. Our recommendation for program enrollment and any additional pricing information will be shared after your trial lesson.</small></p>
       </section>
     </main>
 
-    <footer class="content" aria-label="Website information">
-      <a id="developer" href="https://bellabradbury.github.io/" target="_blank" class="btn" aria-description="Open developer's website in new tab">Developed by Bella Bradbury</a>
-      <p class="v-num">version 1.0</p>
-      <p class="cpyrt">&copy; bella bradbury, 2025</p>
+    <footer class="content centered" aria-label="Website information">
+      <p><small>&copy; Bass Line Music Studio LLC, 2025</small></p>
     </footer>
 
     <script src="js/app.js"></script>

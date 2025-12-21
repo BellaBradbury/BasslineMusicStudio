@@ -180,6 +180,35 @@ a:hover {
   width: 90vw;
 }
 
+/* --- HOME - ONLINE LINKS SECTION --- */
+#online-links {
+  background-color: #bd9aff54;
+  border: 3px solid #222;
+  border-radius: 25px;
+  padding-bottom: 15px;
+}
+#online-links h2 {
+  color: #222;
+}
+#online-links img {
+  max-width: 75px;
+  border: 2px solid #222;
+  border-radius: 50%;
+}
+#online-links div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#online-links a {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* --- HOME - PRICE SECTION --- */
 #price {

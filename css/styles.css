@@ -288,6 +288,66 @@ a:not(.nav-btn):hover {
   background-color: aqua;
 }
 
+/* --- TEAM - STAFF SECTION --- */
+#staff-icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.staff-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border: #222 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5%;
+  margin-top: calc(5% + 75px);
+}
+.pfp {
+  background-color: aqua;
+  border: #222 1px solid;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+}
+.staff-cont h3 {
+  margin: 5% auto 0 auto;
+}
+.staff-cont h4 {
+  margin: 0 auto;
+}
+
+/* --- TEAM - PARTNERS SECTION --- */
+#performance-partners {
+  margin-top: 15%;
+}
+#performance-partners h2 {
+  font-weight: 300;
+  font-size: large;
+}
+#partner-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#partner-logos a {
+  width: 104px;
+  height: 104px;
+  padding: 0;
+}
+#partner-logos img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
 /* --- FOOTER --- */
 footer {
   background-color: #222;

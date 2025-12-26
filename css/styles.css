@@ -47,6 +47,8 @@ small {
 }
 h2 {
   color: #340689;
+  width: 100%;
+  text-align: center;
 }
 
  /* --- LINK & BUTTON STATES --- */
@@ -347,6 +349,36 @@ a:not(.nav-btn):hover {
   margin: 0;
   padding: 0;
 }
+
+/* --- MEDIA - FAVORITE GALLERY SECTION --- */
+#fav-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#fav-gallery img {
+  width: 40vw;
+  border: 1px solid #222;
+  margin: 15px auto;
+}
+
+/* --- MEDIA - POSTERS SECTION --- */
+#posters-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#posters-gallery img {
+  width: 40vw;
+  border: 1px solid #222;
+}
+
 
 /* --- FOOTER --- */
 footer {

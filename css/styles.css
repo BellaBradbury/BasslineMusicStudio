@@ -171,8 +171,16 @@ a:not(.nav-btn):hover {
  /* --- HOME - FEATURE WINDOW SECTION --- */
  #feature-window {
   height: calc(100dvh - 315px);
-  background-color: aqua;
+  background-color: #bd9aff85;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #24055d7d;
+ }
+ #feature-window video {
+  height: 100%;
+  margin: 0 auto;
  }
 
  /* --- HOME - BIO SECTION --- */

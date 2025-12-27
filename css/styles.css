@@ -80,7 +80,7 @@ a {
 a:visited {
   color: rgb(102, 51, 255);
 }
-a:not(.nav-btn):focus, #nav-menu:focus,  #navigation li:has(a:focus) {
+a:not(.nav-btn):focus, #nav-menu:focus,  #navigation li:has(a:focus), .gall-btn:focus {
   outline: none;
   background-color: rgba(255, 29, 29, 0.367);
   border-color: rgb(255, 29, 29);
@@ -414,6 +414,13 @@ button[actStat="inactive"] {
 #posters-gallery img {
   width: 40vw;
   border: 1px solid #222;
+}
+
+/* --- FORM --- */
+#sign-up-form {
+  width: 320px;
+  height: 4150px;
+  margin: 0 auto;
 }
 
 

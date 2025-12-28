@@ -439,8 +439,8 @@ button[actStat="inactive"] {
 
 /* --- FORM --- */
 #sign-up-form {
-  width: 320px;
-  height: 4150px;
+  width: 300px;
+  height: 4200px;
   margin: 0 auto;
 }
 
@@ -649,22 +649,15 @@ footer img {
 
   /* --- FORM --- */
   #sign-up-form {
-    width: 320px;
-    height: 4150px;
-    margin: 0 auto;
+    width: 750px;
+    height: 3200px;
   }
-
 
   /* --- FOOTER --- */
   footer img {
     width: 75px;
   }
 }
-
-
-
-
-
 
 
 

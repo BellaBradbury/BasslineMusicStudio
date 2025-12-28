@@ -674,6 +674,7 @@ footer img {
   /* --- LINK & BUTTON STATES --- */
   .fancy-btn {
     padding: 2%;
+    width: 60%;
   }
 
   /* --- HEADER --- */
@@ -799,59 +800,12 @@ footer img {
     color: #222;
   }
 
-  /* --- EVENTS - CALENDAR SECTION --- */
-  #cal-mobile {
-    display: none;
-  }
-  #cal-tablet {
-    display: block;
-    border:solid 1px #222;
-    border-radius: 15px;
-    height: 75vh;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #media-cary-cot {
-    margin: 70px auto 50px auto;
-  }
-
-  /* --- TEAM - STAFF SECTION --- */
-  #staff-icons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 15%;
-  }
-  .staff-cont {
-    width: 45%;
-    margin: 0 auto;
-    margin-top: calc(5% + 75px);
-  }
-
-  /* --- TEAM - PARTNERS SECTION --- */
-  #performance-partners {
-    margin-top: 5%;
-    width: 100%;
-  }
-  #performance-partners h2 {
-    font-size: 1.5em;
-  }
-  #partner-logos {
-    width: 60%;
-    margin: 0 auto;
-  }
-  #partner-logos a {
-    width: 129px;
-    height: 129px;
-  }
-  #partner-logos img {
-    width: 125px;
-    height: 125px;
-  }
-
   /* --- MEDIA - POSTERS SECTION --- */
-  #fav-gallery {
-    margin-bottom: 15%;
+  #fav-gallery img {
+    width: 20vw;
+  }
+   #fav-gallery img.h-pic {
+    width: 30vw;
   }
 
   /* --- FORM --- */

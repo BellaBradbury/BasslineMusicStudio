@@ -24,10 +24,11 @@ body {
 
 main {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 80px auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 65px auto;
   padding: 10px 20px;
 }
 
@@ -115,14 +116,15 @@ a:not(.nav-btn):hover {
  header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   background-color: #222;
   padding: 2% 0;
   position: fixed;
   top: 0;
-  max-height: 60px;
+  height: 60px;
+  width: 100vw;
   z-index: 99;
  }
  header h1 {
@@ -130,7 +132,7 @@ a:not(.nav-btn):hover {
   color: white;
  }
  .logo {
-  max-width: 10%;
+  width: 40px;
  }
 
  #navigation {
@@ -153,6 +155,7 @@ a:not(.nav-btn):hover {
   border-radius: 25px;
   width: 23%;
   text-align: center;
+  color: rgb(102, 51, 255);
  }
 #nav-menu {
   background-color: #222;
@@ -170,7 +173,7 @@ a:not(.nav-btn):hover {
 
  /* --- HOME - FEATURE WINDOW SECTION --- */
  #feature-window {
-  height: calc(100dvh - 315px);
+  height: calc(100dvh - 300px);
   background-color: #bd9aff85;
   width: 100%;
   display: flex;
@@ -247,13 +250,13 @@ a:not(.nav-btn):hover {
   background-color: #bd9aff54;
   border: 3px solid #222;
   border-radius: 25px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 #online-links h2 {
   color: #222;
 }
 #online-links img {
-  max-width: 75px;
+  width: 75px;
   border: 2px solid #222;
   border-radius: 50%;
 }
@@ -451,7 +454,7 @@ footer p {
   margin-bottom: 0;
 }
 footer img {
-  max-width: 50px;
+  width: 50px;
 }
 #socials-foot {
   display: flex;
@@ -471,7 +474,285 @@ footer img {
 
 
 
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --- 768px */
+@media screen and (min-width: 768px) {
+  main {
+    margin: 110px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
+  section {
+    width: 80%;
+    margin-top: 60px;
+  }
+
+  /* --- LINK & BUTTON STATES --- */
+  /* .fancy-btn {
+    padding: 5%;
+    margin: 15px auto;
+    width: 80%;
+    font-size: 1.25rem;
+  } */
+
+  /* --- HEADER --- */
+  header {
+    justify-content: space-between;
+    height: 100px;
+    padding: 10px;
+  }
+  header h1 {
+    display: none;
+  }
+  .logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  #navigation {
+    display: flex;
+    position: static;
+    width: calc(100vw - 100px);
+  }
+  #navigation li {
+    background-color: rgba(164, 137, 247, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.695);
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    font-size: 1.5em;
+  }
+  #navigation a:visited {
+    color: white;
+  }
+  #nav-menu {
+    display: none;
+  }
+
+  /* --- HOME - FEATURE WINDOW SECTION --- */
+  #feature-window {
+    height: calc(100vh - 150px);
+    background-color: unset;
+    width: 55%;
+    border: none;
+    margin-top: 30px;
+  }
+  #feature-window video {
+    height: fit-content;
+    width: 100%;
+    border: 1px solid #222;
+  }
+
+  /* --- HOME - BIO SECTION --- */
+  #bio {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 35%;
+    font-size: 1.2em;
+    border-left: 1px solid #222;
+    padding: 0 5px;
+  }
+  #open-p {
+    height: fit-content;
+    border-bottom: none;
+  }
+
+  /* --- HOME - CONTACT SECTION --- */
+  #contact h2 {
+    font-size: 2.25em;
+  }
+  #contact p, #contact a {
+    font-size: 1.3em;
+  }
+
+  /* --- HOME - EVENT WINDOW SECTION --- */
+  #nxt-event-poster {
+    width: 100%;
+  }
+
+  /* --- HOME - ONLINE LINKS SECTION --- */
+  #online-links {
+    width: 45%;
+  }
+  #online-links img {
+    width: 100%;
+  }
+  #online-links a {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* --- HOME - PRICE SECTION --- */
+  #price {
+    width: 45%;
+  }
+
+  /* --- EVENTS - CALENDAR SECTION --- */
+  #calendar {
+    border:solid 1px #222;
+    border-radius: 15px;
+    height: 75vh;
+    margin: 0 auto;
+  }
+
+  /* --- EVENTS - MEDIA WINDOW SECTION --- */
+  #media-cary-cot {
+    margin: 50px auto;
+  }
+  #media-cary-imgs {
+    height: 360px;
+    width: 270px;
+    background-color: aqua;
+    position: relative;
+    margin: 0 auto;
+  }
+  .gall-img {
+    width: 270px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .gall-img:not(#c1) {
+    display: none;
+  }
+  #media-cary-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    z-index: 99;
+    position: relative;
+    opacity: 0.75;
+  }
+  .gall-btn {
+    border-radius: 50%;
+    border: 1px solid #222;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    padding: 0;
+  }
+  button[actStat="active"] {
+    background-color: rgb(191, 107, 230);
+  }
+  button[actStat="inactive"] {
+    background-color: rgb(59, 6, 84);
+  }
+
+  /* --- TEAM - STAFF SECTION --- */
+  #staff-icons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .staff-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border: #222 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5%;
+    margin-top: calc(5% + 75px);
+  }
+  .pfp {
+    background-color: aqua;
+    border: #222 1px solid;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+  }
+  .staff-cont h3 {
+    margin: 5% auto 0 auto;
+  }
+  .staff-cont h4 {
+    margin: 0 auto;
+  }
+  .rd-more-btn {
+    font-size: large;
+  }
+  .more-sect {
+    display: none;
+  }
+
+  /* --- TEAM - PARTNERS SECTION --- */
+  #performance-partners {
+    margin-top: 15%;
+  }
+  #performance-partners h2 {
+    font-weight: 300;
+    font-size: large;
+  }
+  #partner-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #partner-logos a {
+    width: 104px;
+    height: 104px;
+    padding: 0;
+  }
+  #partner-logos img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* --- MEDIA - FAVORITE GALLERY SECTION --- */
+  #fav-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #fav-gallery img {
+    width: 40vw;
+    border: 1px solid #222;
+    margin: 15px auto;
+  }
+
+  /* --- MEDIA - POSTERS SECTION --- */
+  #posters-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #posters-gallery img {
+    width: 40vw;
+    border: 1px solid #222;
+  }
+
+  /* --- FORM --- */
+  #sign-up-form {
+    width: 320px;
+    height: 4150px;
+    margin: 0 auto;
+  }
+
+
+  /* --- FOOTER --- */
+  footer img {
+    width: 75px;
+  }
+}
 
 
 

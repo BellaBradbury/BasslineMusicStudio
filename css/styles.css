@@ -327,6 +327,7 @@ a:not(.nav-btn):hover {
   width: 15px;
   height: 15px;
   margin: 0 2px;
+  padding: 0;
 }
 button[actStat="active"] {
   background-color: rgb(191, 107, 230);

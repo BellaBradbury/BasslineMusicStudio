@@ -284,11 +284,15 @@ a:not(.nav-btn):hover {
 }
 
 /* --- EVENTS - CALENDAR SECTION --- */
-#calendar {
+#cal-mobile {
   border:solid 1px #222;
   border-radius: 15px;
   height: 75vh;
+  width: 100%;
   margin: 0 auto;
+}
+#cal-tablet {
+  display: none;
 }
 
 /* --- EVENTS - MEDIA WINDOW SECTION --- */
@@ -298,7 +302,6 @@ a:not(.nav-btn):hover {
 #media-cary-imgs {
   height: 360px;
   width: 270px;
-  background-color: aqua;
   position: relative;
   margin: 0 auto;
 }
@@ -590,59 +593,20 @@ footer img {
   }
 
   /* --- EVENTS - CALENDAR SECTION --- */
-  #calendar {
+  #cal-mobile {
+    display: none;
+  }
+  #cal-tablet {
+    display: block;
     border:solid 1px #222;
     border-radius: 15px;
     height: 75vh;
+    width: 100%;
     margin: 0 auto;
   }
 
-  /* --- EVENTS - MEDIA WINDOW SECTION --- */
   #media-cary-cot {
-    margin: 50px auto;
-  }
-  #media-cary-imgs {
-    height: 360px;
-    width: 270px;
-    background-color: aqua;
-    position: relative;
-    margin: 0 auto;
-  }
-  .gall-img {
-    width: 270px;
-    height: 360px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .gall-img:not(#c1) {
-    display: none;
-  }
-  #media-cary-btns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    z-index: 99;
-    position: relative;
-    opacity: 0.75;
-  }
-  .gall-btn {
-    border-radius: 50%;
-    border: 1px solid #222;
-    width: 15px;
-    height: 15px;
-    margin: 0 2px;
-    padding: 0;
-  }
-  button[actStat="active"] {
-    background-color: rgb(191, 107, 230);
-  }
-  button[actStat="inactive"] {
-    background-color: rgb(59, 6, 84);
+    margin: 70px auto 50px auto;
   }
 
   /* --- TEAM - STAFF SECTION --- */

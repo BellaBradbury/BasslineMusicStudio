@@ -376,6 +376,7 @@ button[actStat="inactive"] {
 }
 .rd-more-btn {
   font-size: large;
+  align-self: end;
 }
 .more-sect {
   display: none;
@@ -748,8 +749,10 @@ footer img {
     align-self: end;
   }
   #nxt-event-poster {
-    width: 100%;
+    height: 60vh;
+    width: fit-content;
     grid-row: span 3;
+    justify-self: end;
   }
   #e4 {
     grid-area: 3 / 2 / 3 / 2;
@@ -762,6 +765,7 @@ footer img {
   #e5 {
     grid-area: 4 / 2 / 4 / 2;
     margin: 0 auto;
+    height: fit-content;
   }
 
   /* --- HOME - ONLINE LINKS SECTION --- */

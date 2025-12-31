@@ -132,6 +132,10 @@ a:not(.nav-btn):hover {
   color: white;
  }
  .logo {
+  width: fit-content;
+  margin: 0;
+ }
+ .logo img {
   width: 40px;
  }
 
@@ -175,6 +179,8 @@ a:not(.nav-btn):hover {
  #feature-window {
   height: calc(100dvh - 300px);
   background-color: #bd9aff85;
+  background-image: url('../images/blms-logo/logo-repeat-min.png');
+  background-size: 350px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -361,7 +367,7 @@ button[actStat="inactive"] {
   margin-top: calc(5% + 75px);
 }
 .pfp {
-  background-color: aqua;
+  background-color: #be9aff;
   border: #222 1px solid;
   border-radius: 50%;
   height: 150px;
@@ -505,6 +511,10 @@ footer img {
     height: 70px;
     width: 70px;
   }
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
 
   #navigation {
     display: flex;
@@ -523,13 +533,13 @@ footer img {
     color: white;
   }
   #nav-menu {
+    color: white;
     display: none;
   }
 
   /* --- HOME - FEATURE WINDOW SECTION --- */
   #feature-window {
     height: calc(100vh - 150px);
-    background-color: unset;
     width: 55%;
     border: none;
     margin-top: 30px;
@@ -681,6 +691,10 @@ footer img {
     height: 60px;
     width: 60px;
   }
+  .logo img {
+    height: 60px;
+    width: 60px;
+  }
 
   #navigation {
     width: calc(100vw - 250px);
@@ -693,7 +707,6 @@ footer img {
   #feature-window {
     order: 1;
     height: calc(100vh - 175px);
-    background-color: unset;
     width: 40%;
   }
   #feature-window video {

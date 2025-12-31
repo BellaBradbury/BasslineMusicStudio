@@ -24,7 +24,7 @@ let allArr = [bbArr, zbArr, ekArr]
 
 // function to show or hide more bio text depending on button click
 function showMore(btn, mId) {
-    if (btn.textContent.includes('more')) {
+    if (btn.textContent.includes('MORE')) {
         for (let i = 0; i < allArr.length; i ++) {
             if (i === mId) {
                 allArr[i][0].style.display = 'none';

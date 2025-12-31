@@ -380,9 +380,31 @@ button[actStat="inactive"] {
 .staff-cont h4 {
   margin: 0 auto;
 }
+.rd-more-btn-cot {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
 .rd-more-btn {
   font-size: large;
-  align-self: end;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #be9aff;
+  color: black;
+  border-radius: 0 0 7.5px 7.5px;
+}
+.rd-less-btn {
+  font-size: large;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.75);
+  color: white;
+  border-radius: 0 0 7.5px 7.5px;
+  text-align: center;
 }
 .more-sect {
   display: none;

@@ -551,6 +551,9 @@ footer img {
     color: white;
     font-size: 1.5em;
   }
+  #navigation a {
+    color: white;
+  }
   #navigation a:visited {
     color: white;
   }
